@@ -1,0 +1,43 @@
+.container_black {
+    padding: 36px 240px;
+    background-color: black;
+    h2 {
+        color: white;
+    }
+}
+
+.container_blue {
+    padding: 36px 240px;
+    background-color: blue;
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        li{
+            margin: 6px;
+            a {
+                text-decoration: none;
+                display: inline-flex;
+                align-items: center;
+                padding: 8px 6px;
+                color: white;
+                text-transform: uppercase;
+                .image_container {
+                    height: 60px;
+                    width: 60px;
+                    object-fit: contain;
+                    display: inline-block;
+                    img {
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+                p {
+                    font-size: 12px;
+                    display: inline-block;
+                    margin: 4px;
+                }
+            }
+        }
+    }
+}
