@@ -1,10 +1,82 @@
 .container_dc {
     padding: 36px 240px;
     background-image: url(../assets/footer-bg.jpg);
+    background-repeat: repeat-x;
     position: relative;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    background-position-x: center;
+    max-height: 480px;
+    .lists_container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            li {
+                margin: 6px;
+                h1 {
+                    color: white;
+                }
+                a {
+                    text-decoration: none;
+                    font-weight: 400;
+                    display: inline-block;
+                    padding: 8px 6px;
+                    margin-left: -6px;
+                    font-size: 11px;
+                    color: lightgrey;
+                }
+            }
+        }
+    }
+    .divider_div {
+        width: 30%;
+    }
+    .image_container {
+        height: 180px;
+        width: 180px;
+        object-fit: contain;
+    }
 }
 
 .last_container {
-    background-color: gray;
+    background-color: rgb(68, 68, 68);
+    padding: 36px 240px;
+    display: flex;
+    .divider_div {
+        flex-grow: 1;
+    }
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        li {
+            margin: 6px;
+            a {
+                text-decoration: none;
+                font-weight: bold;
+                display: inline-block;
+                padding: 8px 6px;
+                text-transform: uppercase;
+                font-size: 14px;
+                color: rgb(19, 19, 201);
+            }
+            .image_container {
+                height: 40px;
+                width: 40px;
+                object-fit: contain;
+                display: inline-block;
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
