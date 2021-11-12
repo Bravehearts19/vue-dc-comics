@@ -5,21 +5,21 @@
     position: relative;
     overflow: hidden;
     display: flex;
-    align-items: center;
     background-position-x: center;
-    max-height: 480px;
+    height: 480px;
     .lists_container {
         height: 100%;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        column-gap: 16px;
         ul {
             list-style: none;
             display: flex;
             flex-direction: column;
             li {
-                margin: 6px;
-                h1 {
+                margin: 1px;
+                h2 {
                     color: white;
                 }
                 a {
@@ -35,12 +35,13 @@
         }
     }
     .divider_div {
-        width: 30%;
+        width: 35%;
     }
     .image_container {
-        height: 180px;
-        width: 180px;
+        height: 360px;
+        width: 360px;
         object-fit: contain;
+        margin-top: -70px;
     }
 }
 
