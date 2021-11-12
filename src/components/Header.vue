@@ -7,7 +7,7 @@
             <div class="divider_div"></div>
             <ul class="navbar-list">
                 <li class="navbar-list-item" v-for="(item, i) in navbarListItems" :key="i">
-                    <a href="#" class="navbar-link " :class="i === 1 ? 'active' : ''">{{ item.title }}</a>
+                    <a href="#" class="navbar-link " :class="i === currentActive ? 'active' : ''" @click="onHeaderNavbarLinkClick(i)">{{ item.title }}</a>
                 </li>
             </ul>
         </div>
@@ -50,7 +50,13 @@ export default {
                 {
                     title: "Shop"
                 },  
-            ]
+            ],
+            currentActive: 1,
+        }
+    },
+    methods: {
+        onHeaderNavbarLinkClick(i) {
+            this.currentActive = i;
         }
     }
 }

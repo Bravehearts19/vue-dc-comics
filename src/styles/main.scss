@@ -1,14 +1,67 @@
-.container_black {
-    padding: 36px 240px;
-    background-color: black;
-    h2 {
+.jumbotron {
+    height: 300px;
+    background-image: url(../assets/jumbotron.jpg);
+    background-size: cover;
+    position: relative;
+    .current_series_container {
+        padding: 8px 14px;
+        background-color: #0282f9;
         color: white;
+        display: inline-block;
+        text-transform: uppercase;
+        position: absolute;
+        bottom: -16px;
+        left: 220px;
+    }
+}
+
+.comics_container {
+    background-color: #1c1c1c;
+    color: white;
+    padding: 36px 240px;
+    .row_cards {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 14px;
+        row-gap: 24px;
+        .comics_card {
+            width: calc((100% - 70px)/ 6);
+            .comics_card_image {
+                width: 100%;
+                aspect-ratio: 1 / 1;
+                overflow-y: hidden;
+                margin-bottom: 5px;
+                img {
+                    width: 100%;
+                }
+            }
+            .comics_card_title {
+                h4 {
+                    font-weight: 400;
+                    font-size: 8px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+    .row {
+        padding-top: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button {
+            color: white;
+            background-color: #0282f9;
+            padding: 8px 60px;
+            border: 0;
+            cursor: pointer;
+        }
     }
 }
 
 .container_blue {
     padding: 36px 240px;
-    background-color: blue;
+    background-color: #0282f9;
     ul {
         list-style: none;
         display: flex;

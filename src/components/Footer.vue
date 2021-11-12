@@ -4,7 +4,7 @@
             <div class="lists_container">
                 <ul v-for="(list, i) in footerLists" :key="i">
                     <li>
-                        <h2> {{ list.title }} </h2>
+                        <h5> {{ list.title }} </h5>
                     </li>
                     <li v-for="(text, index) in list.links" :key="index">
                         <a href="#">{{ text }}</a>
