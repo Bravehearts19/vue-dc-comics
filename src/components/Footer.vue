@@ -26,7 +26,7 @@
                 </li>
                 <li v-for="(image, i) in footerImageUrlList" :key="i">
                     <div class="image_container">
-                        <img :src="image" alt="">
+                        <img :src="require('@/assets/' + image)" alt=""> 
                     </div>
                 </li>
             </ul>
@@ -87,11 +87,11 @@ export default {
                 },
             ],
             footerImageUrlList: [
-                "../assets/footer-facebook.png",
-                "../assets/footer-twitter.png",
-                "../assets/footer-youtube.png",
-                "../assets/footer-pinterest.png",
-                "../assets/footer-periscope.png",
+                "footer-facebook.png",
+                "footer-twitter.png",
+                "footer-youtube.png",
+                "footer-pinterest.png",
+                "footer-periscope.png",
             ]
         }
     }

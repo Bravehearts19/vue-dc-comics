@@ -9,7 +9,7 @@
                 <li v-for="(option, i) in optionsClickList" :key="i">
                     <a href="#">
                         <div class="image_container">
-                            <img :src="option.imgUrl" alt="">
+                            <img :src="require('../assets/' + option.imgUrl)" alt=""> 
                         </div>
                         <p>{{ option.textOption }}</p>
                     </a>
@@ -26,23 +26,23 @@ export default {
         return {
             optionsClickList: [
                 {
-                    imgUrl: "../assets/buy-comics-digital-comics.png",
+                    imgUrl: "buy-comics-digital-comics.png",
                     textOption: "Digital Comics",
                 },
                 {
-                    imgUrl: "../assets/buy-comics-merchandise.png",
+                    imgUrl: "buy-comics-merchandise.png",
                     textOption: "DC Merchandise",
                 },
                 {
-                    imgUrl: "../assets/buy-comics-subscribtions.png",
+                    imgUrl: "buy-comics-subscriptions.png",
                     textOption: "Subscribtion",
                 },
                 {
-                    imgUrl: "../assets/buy-comics-shop-locator.png",
+                    imgUrl: "buy-comics-shop-locator.png",
                     textOption: "Comics Shop Locator",
                 },
                 {
-                    imgUrl: "../assets/buy-dc-power-visa.svg",
+                    imgUrl: "buy-dc-power-visa.svg",
                     textOption: "DC Power VISA",
                 },
             ]
